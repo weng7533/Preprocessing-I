@@ -129,9 +129,49 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 html,
 body {
   height: 100%;
-  background: red;
+  font-size: 62.5%;
+  font-size: 1rem;
+}
+h1 {
+  font-size: 4rem;
+}
+a,
+h2,
+h3,
+h4 {
+  font-size: 2rem;
+}
+P {
+  font-size: 1.5rem;
+}
+body {
+  border: 1px red solid;
+  width: 100%;
+  max-width: 1024px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 1.5rem;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
