@@ -119,11 +119,20 @@ header{
 
 			justify-content: space-evenly;
 
+				a{
+					text-decoration: none;
+						
+				}
+
+		@media (max-width: 500px){
 			a{
-				text-decoration: none;
+				font-size: 1.2rem;
 					
 			}
 		}
+
+
+		} //nav
 } //header
 
 
@@ -153,33 +162,68 @@ header{
 		text-align: left;
 		font-size: 3rem;
 		padding: 2% 0 2% 0;
+
+		@media (max-width: 500px) {
+		text-align: center;
+		font-size: 2rem;
+		padding: 2% 0 2% 0;
+		}	
+
 	}
 
 	h2{
 		text-align: left;
 		font-size: 2rem;
 		padding: 6% 0 3% 0 ;
-	}
+		@media (max-width: 500px) {
+			text-align: center;
+			font-size: 2rem;
+			padding: 2% 0 2% 0;
+			}	
+
+	} //h2
+
+	
+	
 }
 
 
 
-	section.intro,.skill{
+section.intro,.skill{
 		.flexFM();
 		@media(max-width: 500px){
 			flex-direction: column;
-		}
 
+		}
+		@media(max-width: 500px){
+			width: 100%;
+			h1,h2{
+				text-align: center;
+				font-size: 2.0rem;
+				padding: 2%;
+				margin: 2%;
+			}
+
+			
+
+		}//@media(max-width: 500px){
 		.left{
 
 			width: 30%;
 			max-width: 100%;
-
 			@media(max-width: 500px){
 				width: 100%;
-			}
+				h1{
+					width: 100%;
+					font-size: 2.2rem;
+				}
 			
+			
+			}
+		
+
 		}
+	}		
 
 
 
@@ -193,11 +237,48 @@ header{
 
 			.h1h2font();
 
-			p{
-			
-				padding: 0 0 1% 0;
+			@media (max-width: 500px){
+				width: 100%;
+				justify-content: center;
+				align-items: center;
 			}
-		}
+
+				p{
+				padding: 0 0 1% 0;
+				}
+
+			@media (max-width: 500px){
+			h1,h2,p{
+				width: 90%;
+				
+				align-items: center;
+				padding: 1% 0;
+				margin: 2%;
+				text-align: center;
+				vertical-align: middle;
+				}
+
+				h1{
+					font-size: 3rem;
+				}
+
+				h2{
+					font-size: 1.3rem;
+					text-transform: lowercase;
+					font-weight: bold;
+
+				}
+				p{
+					font-size: 1.3rem;
+					
+			
+					padding:  .5rem 0px;
+					margin: 1rem 0;
+			
+
+				}
+
+			}//@media 
 } //section.intro skill
 
 
@@ -206,9 +287,51 @@ header{
 		flex-direction: column;
 		.h1h2font();
 
-		h3{
+		h1,h2,h3{
 			text-align: center;
 		}
+
+		@media (max-width: 500px){
+			margin: 2%;
+			h1,h2,p{
+				width: 100%;
+				
+				align-items: center;
+				padding: 1% 0;
+				margin: 2%;
+				text-align: center;
+				vertical-align: middle;
+				}
+				h2{
+					font-size: 1.3rem;
+					text-transform: lowercase;
+					font-weight: bold;
+
+
+				}
+				h3{
+					font-size: 1.3rem;
+					
+					font-weight: bold;
+
+				}
+				p{
+					font-size: 1.1rem;
+				}
+
+				img{
+					width: 100%;
+				}
+
+			.PortfolioSet{
+				margin: 2%;
+				padding: 2%;
+				border-bottom: 1px @ThemeColor dashed;
+				border-top: 1px @ThemeColor dashed;
+			}
+
+
+			}//@media 
 		
 		
 		
@@ -230,10 +353,19 @@ header{
 		}
 
 		@media (max-width: 500px){
+			h1,h2,p{
+				width: 100%;
+				font-size: 2.2rem;
+				align-items: center;
+				padding: 1% 0;
+				margin: 0;
+				text-align: center;
+				vertical-align: middle;
+				}
 			
 			width: 100%;
 			flex-direction: column;
-			justify-content: space-around;
+			justify-content: space-evenly;
 			align-items: center;
 			padding: 0;
 			margin: 0;
@@ -242,9 +374,21 @@ header{
 }
 
 .contactinfo{
-	.flexFM();
+		.flexFM();
 		flex-direction: column;
 		.h1h2font();
+
+		@media (max-width: 500px){
+			h1,h2,p,span{
+				width: 100%;
+				font-size: 1.2rem;
+				align-items: center;
+				padding: 1% 0;
+				margin: 0;
+				text-align: center;
+				vertical-align: middle;
+				}
+			} //@media
 }
 
 
@@ -256,7 +400,10 @@ header{
 		font-family: arial, sans-serif;
 		border-collapse: collapse;
 		width: 100%;
-
+		 @media (max-width: 500px) {
+		
+			border-bottom: 1px solid #ddd;
+		}
 		
 	  }
 
@@ -264,19 +411,20 @@ header{
 		border: 1px solid #dddddd;
 		text-align: left;
 		padding: 1.5rem;
-		@media (max-width: 500px){
+
+		@media (max-width: 500px) {
 			
-			width: 100%;
-			flex-direction: column;
-			justify-content: space-around;
+		//	width: 100%;
+		//	flex-direction: column;
+		//	justify-content: space-around;
 			align-items: center;
-			padding: 0;
+			padding: 1.5rem 0;
 			margin: 0;
 			text-align: center;
+			vertical-align: middle;
+			font-size: 0.85rem;
 			
+
+			}
+
 		}
-	  }
-	  
-	  tr:nth-child(even) {
-		background-color: #dddddd;
-	  }

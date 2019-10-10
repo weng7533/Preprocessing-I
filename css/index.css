@@ -181,6 +181,11 @@ header nav {
 header nav a {
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.2rem;
+  }
+}
 section.intro,
 .skill {
   display: flex;
@@ -208,6 +213,21 @@ section.intro,
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  section.intro,
+  .skill {
+    width: 100%;
+  }
+  section.intro h1,
+  .skill h1,
+  section.intro h2,
+  .skill h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2%;
+    margin: 2%;
+  }
+}
 section.intro .left,
 .skill .left {
   width: 30%;
@@ -218,30 +238,77 @@ section.intro .left,
   .skill .left {
     width: 100%;
   }
+  section.intro .left h1,
+  .skill .left h1 {
+    width: 100%;
+    font-size: 2.2rem;
+  }
 }
-section.intro .right,
-.skill .right {
+.right {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1% ;
 }
-section.intro .right h1,
-.skill .right h1 {
+.right h1 {
   text-align: left;
   font-size: 3rem;
   padding: 2% 0 2% 0;
 }
-section.intro .right h2,
-.skill .right h2 {
+@media (max-width: 500px) {
+  .right h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2% 0 2% 0;
+  }
+}
+.right h2 {
   text-align: left;
   font-size: 2rem;
   padding: 6% 0 3% 0 ;
 }
-section.intro .right p,
-.skill .right p {
+@media (max-width: 500px) {
+  .right h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2% 0 2% 0;
+  }
+}
+@media (max-width: 500px) {
+  .right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.right p {
   padding: 0 0 1% 0;
+}
+@media (max-width: 500px) {
+  .right h1,
+  .right h2,
+  .right p {
+    width: 90%;
+    align-items: center;
+    padding: 1% 0;
+    margin: 2%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .right h1 {
+    font-size: 3rem;
+  }
+  .right h2 {
+    font-size: 1.3rem;
+    text-transform: lowercase;
+    font-weight: bold;
+  }
+  .right p {
+    font-size: 1.3rem;
+    padding: 0.5rem 0px;
+    margin: 1rem 0;
+  }
 }
 .Portfolio {
   display: flex;
@@ -268,13 +335,65 @@ section.intro .right p,
   font-size: 3rem;
   padding: 2% 0 2% 0;
 }
+@media (max-width: 500px) {
+  .Portfolio h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2% 0 2% 0;
+  }
+}
 .Portfolio h2 {
   text-align: left;
   font-size: 2rem;
   padding: 6% 0 3% 0 ;
 }
+@media (max-width: 500px) {
+  .Portfolio h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2% 0 2% 0;
+  }
+}
+.Portfolio h1,
+.Portfolio h2,
 .Portfolio h3 {
   text-align: center;
+}
+@media (max-width: 500px) {
+  .Portfolio {
+    margin: 2%;
+  }
+  .Portfolio h1,
+  .Portfolio h2,
+  .Portfolio p {
+    width: 100%;
+    align-items: center;
+    padding: 1% 0;
+    margin: 2%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .Portfolio h2 {
+    font-size: 1.3rem;
+    text-transform: lowercase;
+    font-weight: bold;
+  }
+  .Portfolio h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .Portfolio p {
+    font-size: 1.1rem;
+  }
+  .Portfolio img {
+    width: 100%;
+  }
+  .Portfolio .PortfolioSet {
+    margin: 2%;
+    padding: 2%;
+    border-bottom: 1px #a5da95 dashed;
+    border-top: 1px #a5da95 dashed;
+  }
 }
 .WorkHistory {
   display: flex;
@@ -304,10 +423,21 @@ section.intro .right p,
   .WorkHistory {
     width: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0;
     margin: 0;
+  }
+  .WorkHistory h1,
+  .WorkHistory h2,
+  .WorkHistory p {
+    width: 100%;
+    font-size: 2.2rem;
+    align-items: center;
+    padding: 1% 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
   }
 }
 .contactinfo {
@@ -335,15 +465,48 @@ section.intro .right p,
   font-size: 3rem;
   padding: 2% 0 2% 0;
 }
+@media (max-width: 500px) {
+  .contactinfo h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2% 0 2% 0;
+  }
+}
 .contactinfo h2 {
   text-align: left;
   font-size: 2rem;
   padding: 6% 0 3% 0 ;
 }
+@media (max-width: 500px) {
+  .contactinfo h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2% 0 2% 0;
+  }
+}
+@media (max-width: 500px) {
+  .contactinfo h1,
+  .contactinfo h2,
+  .contactinfo p,
+  .contactinfo span {
+    width: 100%;
+    font-size: 1.2rem;
+    align-items: center;
+    padding: 1% 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+}
+@media (max-width: 500px) {
+  table {
+    border-bottom: 1px solid #ddd;
+  }
 }
 td,
 th {
@@ -354,15 +517,11 @@ th {
 @media (max-width: 500px) {
   td,
   th {
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    padding: 0;
+    padding: 1.5rem 0;
     margin: 0;
     text-align: center;
+    vertical-align: middle;
+    font-size: 0.85rem;
   }
-}
-tr:nth-child(even) {
-  background-color: #dddddd;
 }
